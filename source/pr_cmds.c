@@ -1330,6 +1330,11 @@ void PF_SetDoubleTapVersion(void)
 	MSG_WriteByte (&client->message, state);
 }
 
+void PF_SetClientMode(void)
+{
+	// ...
+}
+
 /*
 =================
 PF_ScreenFlash
@@ -4152,6 +4157,7 @@ static builtin_t pr_builtin[] =
 	PF_ScreenFlash,				// #507
 	PF_LockViewmodel,			// #508
 	PF_Rumble,					// #509
+	PF_SetClientMode,			// #510
 };
 
 builtin_t *pr_builtins = pr_builtin;
