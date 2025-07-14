@@ -32,6 +32,13 @@ int		sv_protocol = PROTOCOL_FITZQUAKE; //johnfitz
 
 extern qboolean	pr_alpha_supported; //johnfitz
 
+cvar_t 	sv_gamemode = {"sv_gamemode", "0", false};
+cvar_t 	sv_difficulty = {"sv_difficulty", "0", false};
+cvar_t 	sv_startround = {"sv_startround", "0", false};
+cvar_t 	sv_magic = {"sv_magic", "1", false};
+cvar_t 	sv_headshotonly = {"sv_headshotonly", "0", false};
+cvar_t 	sv_fastrounds = {"sv_fastrounds", "0", false};
+
 //============================================================================
 
 /*
@@ -104,6 +111,12 @@ void SV_Init (void)
 	Cvar_RegisterVariable (&sv_nostep);
 	Cvar_RegisterVariable (&sv_freezenonclients);
 	Cvar_RegisterVariable (&sv_altnoclip); //johnfitz
+	Cvar_RegisterVariable (&sv_gamemode);
+	Cvar_RegisterVariable (&sv_difficulty);
+	Cvar_RegisterVariable (&sv_startround);
+	Cvar_RegisterVariable (&sv_magic);
+	Cvar_RegisterVariable (&sv_headshotonly);
+	Cvar_RegisterVariable (&sv_fastrounds);
 
 	Cmd_AddCommand ("sv_protocol", &SV_Protocol_f); //johnfitz
 
