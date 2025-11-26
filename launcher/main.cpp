@@ -209,7 +209,7 @@ int main(int argc, char *argv[]) {
 	// Cleanup
 	ImGui_ImplVitaGL_Shutdown();
 	ImGui::DestroyContext();
-	vglEnd();
+	//vglEnd();
 	
 	return 0;
 }
