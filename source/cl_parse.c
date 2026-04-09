@@ -1131,6 +1131,13 @@ void CL_ParseClientdata (void)
 	if (cl.stats[STAT_CURRENTMAG2] != i)
 		cl.stats[STAT_CURRENTMAG2] = i;
 
+	i = MSG_ReadShort ();
+	if (cl.stats[STAT_VIEWMODEL_EFFECTS] != i)
+		cl.stats[STAT_VIEWMODEL_EFFECTS] = i;
+
+	i = MSG_ReadShort ();
+	if (cl.stats[STAT_VIEWMODEL2_EFFECTS] != i)
+		cl.stats[STAT_VIEWMODEL2_EFFECTS] = i;
 
 	//johnfitz -- PROTOCOL_FITZQUAKE
 	if (bits & SU_WEAPON2)

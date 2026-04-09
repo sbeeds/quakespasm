@@ -7,7 +7,7 @@ LIBS:= -limgui -lvitaGL -lvitashark -lSceShaccCgExt -lvorbisfile -lvorbis -logg 
 	-lScePspnetAdhoc_stub -lc -lSceLibKernel_stub -lmathneon -lSDL2 -lSceAudioIn_stub -lSceKernelDmacMgr_stub \
 	-lSceNet_stub -lSceNetCtl_stub -lpng -lSceDisplay_stub -lSceGxm_stub -lSceShaccCg_stub -lSceIme_stub \
 	-ltaihen_stub -lSceSysmodule_stub -lSceCtrl_stub -lSceTouch_stub -lSceMotion_stub -lm -lSceAppMgr_stub \
-	-lSceAppUtil_stub -lScePgf_stub -ljpeg -lSceRtc_stub -lScePower_stub -lcurl -lssl -lcrypto -lz \
+	-lSceAppUtil_stub -lScePgf_stub -ljpeg -lSceRtc_stub -lScePower_stub -lcurl -lssl -lcrypto -lz -lzstd \
 	-lSceHid_stub -lSceCommonDialog_stub -lSceAudio_stub -lstdc++
 	
 PREFIX  = arm-vita-eabi
